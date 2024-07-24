@@ -1,0 +1,93 @@
+body {
+    font-family: 'Courier New', monospace;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #282828; /* Gruvbox dark background */
+    color: #ebdbb2; /* Gruvbox foreground */
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.container {
+    text-align: center;
+    /* background-color: #282828; /* Gruvbox dark background */ */
+    background-color: #3c3836; /* Gruvbox dark0_soft */
+    padding-top: 2rem;
+    /* border-radius: 10px; */
+    <!-- box-shadow: 0 0 10px rgba(0,0,0,0.3); -->
+    margin-top: 2rem;
+    width: 90%;
+    max-width: 900px;
+}
+#text-display {
+    box-sizing: border-box;
+    padding: 1rem;
+    /* font-size: 1.5rem; */
+    /* margin-top: 1rem; */
+    /* min-height: 3rem; */
+    color: #b8bb26; /* Gruvbox green */
+}
+#user-input {
+    font-size: 1rem;
+    padding: 0.5rem;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 1rem;
+    background-color: #504945; /* Gruvbox dark2 */
+    border: none;
+    color: #ebdbb2; /* Gruvbox foreground */
+    border-radius: 5px;
+}
+input[type=text]:focus {
+  outline: 1px solid orange;
+}
+#keyboard {
+    display: grid;
+    grid-template-columns: repeat(60, 1fr);
+    gap: 2px;
+}
+.key {
+    grid-column: span 4;
+    height: 40px;
+    background-color: #504945; /* Gruvbox dark2 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #ebdbb2; /* Gruvbox foreground */
+    user-select: none;
+}
+.key.wide { grid-column: span 5; }
+.key.more-wide { grid-column: span 7; }
+.key.extra-wide { grid-column: span 8; }
+.key.extra-more-wide { grid-column: span 9; }
+.key.space { grid-column: span 24; }
+.key.active { background-color: #fabd2f; color: #282828; }
+#charts {
+    display: flex;
+    justify-content: space-around;
+    box-sizing: border-box;
+    padding: 1rem;
+    margin: 1rem 0;
+    height: 150px;
+}
+.chart-container {
+    width: 48%;
+    height: 100%;
+}
+#license-info {
+    font-size: 0.8rem;
+    margin-top: 1rem;
+    text-align: center;
+    color: #928374; /* Gruvbox gray */
+}
+#license-info a {
+    color: #83a598; /* Gruvbox blue */
+    text-decoration: none;
+}
+#license-info a:hover {
+    text-decoration: underline;
+}

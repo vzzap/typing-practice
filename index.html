@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdnjs.cloudflare.com 'unsafe-inline'; style-src 'self' 'unsafe-inline';">
+    <title>Typing Practice - Gruvbox Theme</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js" integrity="sha512-QSkVNOCYLtj73J4hbmVoOV6KVZuMluZlioC+trLpewV8qMjsWqlIQvkn1KGX2StWvPMdWGBqim1xlC8krl1EKQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Typing Practice</h1>
+        <div id="charts">
+            <div class="chart-container">
+                <canvas id="speedChart"></canvas>
+            </div>
+            <div class="chart-container">
+                <canvas id="accuracyChart"></canvas>
+            </div>
+        </div>
+        <div id="text-display"></div>
+        <input type="text" id="user-input" placeholder="Start typing here..." autocomplete="off">
+        <div id="keyboard"></div>
+        <div id="license-info">
+            Using <a href="https://github.com/chartjs/Chart.js" target="_blank" rel="noopener noreferrer">Chart.js</a> (MIT License) | 
+            Color scheme inspired by <a href="https://github.com/morhetz/gruvbox" target="_blank" rel="noopener noreferrer">Gruvbox</a>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
